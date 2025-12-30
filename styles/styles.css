@@ -1,0 +1,367 @@
+/* ================ H e a d e r ================ */
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 3.5em;
+  background-color: var(--header);
+  z-index: 5;
+  backdrop-filter: blur(5px);
+}
+.header__icon {
+  height: 2em;
+  fill: var(--text);
+  cursor: pointer;
+
+}
+.header a{
+  margin: 0px 0.625em;
+}
+.header p {
+  font-size: 1.5em;
+}
+.header a:hover{
+  opacity: 0.9;
+  
+}
+
+.header a:active{
+  color: rgb(185, 185, 185);
+}
+
+.header__text, .header__icon, .profile-picture {
+  background-color: none;
+  transition: 
+  opacity 0.2s,
+  box-shadow 0.3s,
+  text-shadow 0.3s,
+  filter 0.5s,
+  font-size 0.2s;
+}
+
+.header__text:hover {
+  text-shadow: 0px 0px 0.5rem var(--glow);
+}
+.header__icon:hover, .profile-picture:hover {
+  filter: drop-shadow(0px 0px 0.5rem var(--glow));
+}
+
+.selected {
+  background-color: var(--link);
+  width: 2.5rem;
+  height: 0.2rem;
+  border-radius: 1rem;
+  margin-top: -0.35rem;
+}
+.header__button:hover .selected {
+  width: 5rem;
+  box-shadow: 0px 0px 0.5rem var(--link);
+}
+
+.selected--2 {
+  background-color: var(--link);
+  width: 1rem;
+  height: 0.2rem;
+  border-radius: 1rem;
+  opacity: 0;
+  margin-top: -0.2rem;
+}
+.header__button:hover .selected--2 {
+  opacity: 0.95;
+  width: 2.5rem;
+  box-shadow: 0px 0px 0.5rem var(--glow);
+}
+
+.tooltip {
+  position: absolute;
+  font-size: 0.625em;
+  font-weight: 400;
+  background-color: var(--background);
+  box-shadow: 0 0 0.1rem var(--glow) inset;
+  padding: 0.2rem 0.5rem;
+  border: solid 1px var(--text);
+  bottom: -3em;
+  display: none;
+}
+.selected--3:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+
+#menu {
+  margin-left: -1rem;
+  margin-top: 0.15rem;
+}
+
+/* ================--- Introduction ---==================== */
+
+#introduction {
+  position: relative;
+}
+.learning__text {
+  margin-bottom: 1rem;
+}
+/* ================--- Languages ---==================== */
+#languages {
+  padding: 1rem;
+  border-left: solid 1px var(--text);
+  margin-left: auto;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  
+}
+.language {
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+.language--2 {
+  justify-content: space-around;
+}
+.language__icon {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  object-position: center;
+  transition: 200ms ease;
+}
+.language__icon:hover {
+    scale: 1.12;
+    
+}
+
+.language__text {
+  font-size: 1.5rem;
+  transition: text-shadow 0.3s;
+}
+.language__text:hover {
+  text-shadow: 0 0 0.5rem var(--glow);
+}
+
+.html, .css, .js, .react, .typescript {
+  margin: 0.2rem 1rem;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+.html:active, .css:active, .js:active, .react:active, .typescript:active {
+  opacity: 0.3;
+}
+.css, .typescript {
+  filter: drop-shadow(0 0 0.7rem #217dff79);
+}
+.react {
+  filter: drop-shadow(0 0 1rem #66a6ff71);
+}
+.html {
+  filter: drop-shadow(0 0 0.7rem #fc470b83);
+}
+.js {
+  filter: drop-shadow(0 0 0.7rem #fcb00b86);
+}
+.html:hover p, .css:hover p, .js:hover p, .react:hover p, .typescript:hover p {
+  text-shadow: 0 0 0.6rem var(--glow);
+}
+
+/* ================--- Progress Bar ---==================== */
+
+#progress {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.section__2 {
+  margin-bottom: 5rem;
+}
+
+.progress__border {
+  border: solid 1px var(--text);
+  border-radius: 0.4rem;
+  width: 75%;
+  height: 5vh;
+  margin-right: 0.7rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: 200ms ease;
+  background-color: rgba(240, 248, 255, 0.01);
+}
+.progress__border:hover {
+  box-shadow: 0px 2px 0.6rem rgba(255, 255, 255, 0.3), 0px 0px 0.5rem rgba(0, 0, 0, 0.705) inset;
+  text-shadow: 0px 2px 0.5rem rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.progress__bar {
+  background-color: var(--secondary-clr);
+  height: 100%;
+  width: 0%;
+  display: block;
+
+}
+.progress__percentage {
+  margin-left: 0.2rem;
+  font-size: 1rem;
+  animation: 2s opacity ease-in 1s forwards;
+  opacity: 0;
+}
+.progress__language {
+  height: 2rem;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  transition: 150ms ease;
+  border-radius: 3px;
+}
+.progress__language:hover {
+  scale: 1.1;
+}
+.language__name {
+ margin: 0px;
+ margin-left: 0.5rem;
+}
+
+
+.html--2 {
+  animation: 1s html ease-out 0.4s forwards;
+}
+.css--2 {
+  animation: 1.2s css ease-out 0.5s forwards;
+}
+.js--2 {
+ background-color: rgb(239, 255, 17);
+ animation: 0.5s js ease-out 0.6s forwards;
+}
+.typescript--2 {
+  background-color: rgb(17, 100, 255);
+  animation: 0.5s js ease-out 0.6s forwards;
+}
+.react--2 {
+  background-color: rgb(17, 188, 255);
+  animation: 0.5s js ease-out 0.7s forwards;
+}
+
+/* ---------------- A N I M A T I O N S ----------------- */
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 1%;
+  }
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ================ F o o t e r ================ */
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 1rem;
+}
+.footer__text {
+  font-size: 1rem;
+  padding-right: 1.7rem;
+}
+.discord__button {
+  background-color: #5865f2;
+  color: white;
+  font-family: Rubik;
+  border: none;
+  border-radius: 2rem;
+  cursor:pointer;
+  padding: 0.1rem 0.6rem;
+  padding-right: 0.8rem;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+  transition: 200ms ease;
+  box-shadow: 0 0 1rem #5865f271;
+  margin-top: 0.5rem;
+}
+.discord__button:hover {
+  scale: 1.05;
+  background-color:#587cf2;
+  outline: solid 2px white;
+}
+.whatsapp__button {
+  background-color: #25d366;
+  color: #111b21;
+  border: none;
+  border-radius: 2rem;
+  cursor:pointer;
+  padding: 0.32rem 0.6rem;
+  padding-right: 0.8rem;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+  font-family: Roboto;
+  font-weight: 500;
+  transition: 200ms ease;
+  border: solid 2px #111b21;
+  box-shadow: 0 0 1rem #25d36560;
+  margin-top: 0.5rem;
+}
+.whatsapp__button:hover {
+  scale: 1.05;
+  background-color:#27ff5d;
+  outline: solid 2px white;
+}
+.youtube__button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  cursor:pointer;
+  padding: 0.32rem 0.6rem;
+  padding-right: 0.8rem;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+  font-family: Roboto;
+  font-weight: 500;
+  transition: scale 200ms ease;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.589);
+  margin-top: 0.5rem;
+}
+
+.youtube__button:hover {
+  scale: 1.05;
+  background-color:#ebebeb;
+  outline: solid 2px rgb(0, 0, 0);
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.589), 0 0 1rem rgba(255, 255, 255, 0.589) inset;
+}
+
+@keyframes border-width {
+  0% {
+    width: 8rem;
+  }
+  100% {
+    width: 23rem;
+  }
+}
+/* ================---xxx- END -xxx---==================== */

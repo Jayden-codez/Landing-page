@@ -1,0 +1,399 @@
+/* ============= root styles ============== */
+html {
+  font-family: Roboto, Arial, Montserrat, Rubik;
+  font-size: 100%;
+}
+body {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0.3125rem;
+  padding-left: 0.5rem;
+  margin: 0px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6) inset;
+  padding-top: 3rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+main {
+  padding-left: 0.2rem;
+}
+
+a {
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: none;
+  
+}
+
+button:active {
+  opacity: 0.3;
+  
+}
+
+/* ============= root styles ============== */
+
+:root {
+
+  --background: #222;
+  --text: white;
+  --border: rgb(100, 100, 100);
+  --header: rgba(32, 32, 32, 0.94);
+  --glow: rgba(255, 255, 255, 0.5);
+  --secondary-clr: rgb(255, 255, 255);
+  --link: rgba(255, 255, 255, 0.5);
+}
+
+/* ============= text/size ============== */
+
+p {
+  font-size: clamp(1rem, 1.5rem, 3.5rem);
+  margin: 0.4rem 0rem;
+  transition: font-size 0.1s;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.8rem 0rem;
+  font-family: Rubik;
+}
+
+.size1 {
+  font-size: 1.5rem;
+}
+.text-decoration {
+  text-decoration: underline;
+  font-family: Rubik;
+}
+
+.spacing {
+ line-height: 2.2rem;
+}
+
+/* ================= Images ==================== */
+
+.emoji {
+  height: 1.5rem;
+  margin-left: -0.2rem;
+  cursor: text;
+}
+.icon {
+  height: 1.5em;
+  margin-right: 0.2em;
+}
+.icon--2 {
+  height: 2em;
+}
+.icon:hover {
+  filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.profile-picture {
+  width: 2.5em;
+  height: 2.5em;
+  object-fit: cover;
+  border-radius: 2.5em;
+}
+
+/* ================ List alignment ================ */
+
+.list {
+  list-style: none; /* remove default list */
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8rem;
+}
+.list__symbol {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0;
+}
+.list__symbol::before {
+  content: "•";
+}
+
+/* ================= Flexbox ==================== */
+
+.alignment {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-spaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* ============= Space, Position, Margin and Padding ================ */
+
+.margin0 {
+  margin: 0px;
+  margin-top: 10px; 
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ================ T e s t i n g ==================== */
+
+.border {
+  border: solid 1px var(--text);
+}
+.border-blue {
+  border: solid 3px blue;
+}
+.border-red {
+  border: solid 3px red;
+}
+.border-bottom {
+  border-bottom: solid 1px var(--border);
+  margin: 0px 10px;
+}
+.border-bottom--2 {
+
+  padding-bottom: 2rem;
+  border-bottom: solid 1px var(--border);
+  
+}
+.border-top {
+  border-top: solid 1px var(--border);
+  margin: 0px 10px;
+}
+
+
+/* ===============--------- E F F E C T S ------================= */
+
+.transition {
+  transition:
+  opacity 0.2s,
+  box-shadow 0.3s,
+  text-shadow 0.3s,
+  filter 0.5s,
+  width 0.3s;
+}
+
+#thumbnails, #videos, #learn {
+  transition: opacity 0.3s;
+}
+
+.rounded-1 {
+  border-radius: 0.2rem;
+}
+
+/* ================--- Media / Responsive Design ---============== */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: white;
+    --text: rgb(0, 0, 0);
+    --header: rgba(255, 255, 255, 0.94);
+    --glow: rgba(0, 0, 0, 0.5);
+    --secondary-clr: rgb(0, 196, 42);
+    --link: rgba(0, 81, 255, 0.8);
+  }
+  .header {
+    margin: 0;
+  }
+  .header__icon {
+    margin-left: 0.5rem;
+  }
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+  /*  #introduction, #languages {
+    zoom: 1.6; 
+    
+  } */
+  html {
+    font-size: 1.3rem;
+  }
+  header, .header {
+    font-size: 16px;
+  }
+  .learning__text {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 999px) {
+  
+  p, .emoji, .spacing {
+    font-size: 1.25em !important;
+    line-height: 1.5em;
+  }
+  .profile-picture {
+    height: 2em;
+    width: 2em;
+    
+  }
+  .header__icon {
+    height: 1.5em;
+  }
+  
+}
+@media (max-width: 800px)   {
+  .header__middle-section {
+    opacity: 0;
+  }
+  #introduction {
+    width: 700px;
+  }
+  
+  #languages {
+    border: none;
+    margin-left: 0px;
+  }
+  .section__1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   h1 {
+    font-size: 3.5rem;
+    width: 25rem;
+  }
+  #introduction p {
+    font-size: 2rem !important;
+  }
+  .learning__text {
+    text-align: center;
+    border-top: solid 1px var(--border);
+    padding-top: 1rem;
+    margin-top: 1.2rem;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__middle-section {
+    display: none;
+  }
+ 
+}
+@media (max-width: 650px) {
+  .header__text {
+    font-size: 1em !important;
+  }
+  .language__name {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width:575px) {
+ #thumbnails {
+  opacity: 0;
+ }
+}
+
+@media (max-width:550px) {
+ #thumbnails {
+  opacity: 0;
+  display: none;
+ }
+}
+
+@media (max-width:500px) {
+ 
+  .tooltip {
+    bottom: -2em;
+  }
+   #introduction p {
+    font-size: 1.5rem !important;
+  }
+  #introduction {
+    padding-left: 1rem;
+  }
+  
+}
+
+@media (max-width:465px) {
+ #videos {
+  opacity: 0;
+ }
+ .footer .column--2 {
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.3rem;
+ }
+ body {
+  padding-bottom: 8rem;
+ } 
+}
+
+@media (max-width:450px) {
+ #videos {
+  display: none;
+ }
+
+}
+
+@media (max-width:415px) {
+ #learn {
+  opacity: 0;
+ }
+
+}
+
+@media (max-width: 400px) {
+  .header__left-section p {
+    display: none;
+  }
+  .header__left-section {
+    width: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+  p, .emoji, .spacing, li, div {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .language__text {
+    font-size: 1em;
+  }
+  .language__icon {
+    width: 2em;
+    height: 2em;
+  }
+  h1 {
+    line-height: 2rem;
+  }
+}
