@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora de trading stop loss e alvo">
+
+    <title>Calculadora de Stop loss</title>
+    <link rel="icon" href="favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="favicon.png" type="image/png" media="(prefers-color-scheme: light)">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="https://www.tradingview.com" target="_blank">
+        <img src="images/tradingview.png" class="tradingview">
+      </a>
+      <h1 class="header__title">Calculadora de Stop Loss</h1>
+
+      <a href="https://www.tradingview.com" target="_blank">
+        <img src="images/candles icon.png" class="candles">
+      </a>
+    </header>
+
+    <main>
+      <p class="select">Selecione Um Ativo.</p>
+      <a href="/XAUUSD/">
+        <nav class="select__item xauusd">
+          <img src="images/gold.svg" class="item__icon">
+          <div class="column">
+            <p class="item__name">XAUUSD</p>
+            <p class="item__description">OANDA &middot; OURO/DÓLAR</p>
+          </div>
+        </nav>
+      </a>
+      <a href="/BTCUSD/">
+        <nav class="select__item btcusd">
+          <img src="images/Bitcoin.svg" class="item__icon">
+          <div class="column">
+            <p class="item__name">BTCUSD</p>
+            <p class="item__description">BINANCE &middot; BITCOIN/DÓLAR</p>
+          </div>
+        </nav>
+      </a>
+      <a href="US30/">
+        <nav class="select__item us30">
+          <img src="images/us30.svg" class="item__icon">
+          <div class="column">
+            <p class="item__name">US30</p>
+            <p class="item__description">BlackBull Markets &middot; Dow Jones</p>
+          </div>
+        </nav>
+      </a>
+      <a href="US100/">
+        <nav class="select__item us100">
+          <img src="images/us-100.svg" class="item__icon">
+          <div class="column">
+            <p class="item__name">NASDAQ</p>
+            <p class="item__description">Nasdaq Stock Market &middot; NDX</p>
+          </div>
+        </nav>
+      </a>
+      <a href="EURUSD/">
+        <nav class="select__item eurusd">
+          <div class="relative">
+            <img src="images/eur.svg" class="item__icon--2">
+            <img src="images/usd.svg" class="item__icon--3">
+          </div>
+          <div class="column">
+            <p class="item__name">EURUSD</p>
+            <p class="item__description">OANDA &middot; EURO/DÓLAR</p>
+          </div>
+        </nav>
+      </a>
+      <a href="USDJPY/">
+        <nav class="select__item usdjpy">
+          <div class="relative">
+            <img src="images/usd.svg" class="item__icon--2">
+            <img src="images/jpy.svg" class="item__icon--3">
+          </div>
+          <div class="column">
+            <p class="item__name">USDJPY</p>
+            <p class="item__description">OANDA &middot; LIBRA/DÓLAR</p>
+          </div>
+        </nav>
+      </a>
+      <a href="GBPUSD/">
+        <nav class="select__item gbpusd">
+          <div class="relative">
+            <img src="images/gbp.svg" class="item__icon--2">
+            <img src="images/usd.svg" class="item__icon--3">
+          </div>
+          <div class="column">
+            <p class="item__name">GBPUSD</p>
+            <p class="item__description">OANDA &middot; DÓLAR/JAPONESE YEN </p>
+          </div>
+        </nav>
+      </a>
+      <p class="watermark">@Jayeen - 2026</p>
+    </main>
+  </body>
+</html>
