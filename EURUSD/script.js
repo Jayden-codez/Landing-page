@@ -2,7 +2,7 @@
     let contratos = document.getElementById("contratos").value;
     let pontos = document.getElementById("pontos").value;
     let resultado = pontos * contratos;
-    document.getElementById("result").textContent = `$${resultado}`;
+    document.getElementById("result").textContent = `$${Math.round(resultado * 100) / 100}`;
 }
 
  function result2() {
@@ -17,4 +17,5 @@ function result3() {
     let stopLoss = document.getElementById("stopLoss2").value;
     let resultado3 = stopLoss / contratos;
     document.getElementById("result3").textContent = resultado3;
+
 }
