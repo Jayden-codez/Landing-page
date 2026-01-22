@@ -20,7 +20,7 @@
     let valor2 = '';
 
     if (document.getElementById("valor2").value === '') {
-        valor2 = 90103.94;
+        valor2 = 3034.42;
     } else {
         valor2 = document.getElementById("valor2").value;
     }
@@ -32,3 +32,4 @@
     document.getElementById("result2").textContent = `${Math.round(resultado * 100) / 100}`;
 
 }
+
