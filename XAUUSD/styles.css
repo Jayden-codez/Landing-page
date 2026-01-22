@@ -236,6 +236,13 @@ h1 {
 @font-face {
   font-family: "Apple-system";
   src: url("../fonts/pro/SF-Pro-Text-Regular.otf") format('opentype');
+}
 
+/* ================- MEDIA QUERIES -================= */
 
+@media (max-width: 500px) {
+  .size1 {
+  width: 7rem;
+  margin-left: 1rem;
+  }
 }
