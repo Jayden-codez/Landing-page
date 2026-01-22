@@ -40,7 +40,7 @@ h1 {
 .title {
   color: var(--text-clr);
   font-family: "Euclid-semibold";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
   margin-bottom: 0.3rem;
   margin-top: 2rem;
@@ -271,10 +271,11 @@ h1 {
     visibility: visible;
   }
   .description {
-
-  font-size: 1rem;
-
-}
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -283,5 +284,6 @@ h1 {
     margin-left: 1rem;
   }
 }
+
 
 
