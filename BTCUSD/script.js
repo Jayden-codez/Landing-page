@@ -1,20 +1,33 @@
  function result() {
+    
+    let valor = '';
+
+    if (document.getElementById("valor").value === '') {
+        valor = 90103.94;
+    } else {
+        valor = document.getElementById("valor").value;
+    }
+        
+    let porcentagem = document.getElementById("porcentagem").value;
     let contratos = document.getElementById("contratos").value;
-    let pontos = document.getElementById("pontos").value;
-    let resultado = pontos * contratos;
-    document.getElementById("result").textContent = `$${resultado}`;
+
+    let resultado = (valor / 100) * porcentagem * contratos;
+    document.getElementById("result").textContent = `$${Math.round(resultado*100) / 100}`;
 }
 
  function result2() {
-    let pontos = document.getElementById("pontos2").value;
-    let stopLoss = document.getElementById("stopLoss").value;
-    let resultado2 = stopLoss / pontos;
-    document.getElementById("result2").textContent = resultado2;
-}
+    
+    let valor2 = '';
 
-function result3() {
-    let contratos = document.getElementById("contratos2").value;
-    let stopLoss = document.getElementById("stopLoss2").value;
-    let resultado3 = stopLoss / contratos;
-    document.getElementById("result3").textContent = resultado3;
+    if (document.getElementById("valor2").value === '') {
+        valor2 = 90103.94;
+    } else {
+        valor2 = document.getElementById("valor2").value;
+    }
+        
+    let porcentagem2 = document.getElementById("porcentagem2").value;
+    let stopLoss = document.getElementById("stopLoss").value;
+
+    let resultado = stopLoss / ((valor2 / 100) * porcentagem2) ;
+    document.getElementById("result2").textContent = `${Math.round(resultado * 100) / 100}`;
 }
