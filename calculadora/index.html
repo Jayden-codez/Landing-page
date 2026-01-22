@@ -1,107 +1,293 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Calculadora de trading stop loss e alvo">
+<html lang="en">
 
-    <title>Calculadora de Stop loss</title>
-    <link rel="icon" href="favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="favicon.png" type="image/png" media="(prefers-color-scheme: light)">
-    
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    
-    <header class="header">
-      <a href="https://www.tradingview.com" target="_blank">
-        <img src="images/tradingview.png" class="tradingview">
-      </a>
-      <h1 class="header__title">Calculadora de Stop Loss</h1>
+<head>
 
-      <a href="https://www.tradingview.com" target="_blank">
-        <img src="images/candles icon.png" class="candles">
-      </a>
-    </header>
+  <title>Jayden | Web Developer</title>
+  <link rel="icon" 
+  type="image/webp"
+  href="images/favicon.webp"
+  media="(prefers-color-scheme: light)">
+  
+  <link rel="icon" 
+  type="image/webp"
+  href="images/favicon-white.webp"
+  media="(prefers-color-scheme: dark)">
 
-    <main>
-      <p class="select">Selecione Um Ativo.</p>
-      <a href="../XAUUSD">
-        <nav class="select__item xauusd">
-          <img src="images/gold.svg" class="item__icon">
-          <div class="column">
-            <p class="item__name">XAUUSD</p>
-            <p class="item__description">OANDA &middot; OURO/DÓLAR</p>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/general.css">
+
+  <meta charset="utf-8">
+  <meta name="description" content="Web developer landing page - jayeen.site - Jayden">
+
+  <!--------------------- Google Fonts ------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header border-bottom flex-spaced alignment">
+    <nav class="header__left-section alignment">
+      <a>
+        <a class="selected--3 center relative" id="menu" href="images/page/">
+          <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"></path>
+          </svg>
+          <div class="tooltip">
+            Menu
           </div>
-        </nav>
+        </a>
       </a>
-      <a href="../BTCUSD">
-        <nav class="select__item btcusd">
-          <img src="images/Bitcoin.svg" class="item__icon">
-          <div class="column">
-            <p class="item__name">BTCUSD</p>
-            <p class="item__description">BINANCE &middot; BITCOIN/DÓLAR</p>
-          </div>
-        </nav>
+
+      <a href="learn/" id="learn">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Learn
+          </p>
+
+          <div class="selected--2 transition"> </div>
+        </div>
       </a>
-      <a href="../US30">
-        <nav class="select__item us30">
-          <img src="images/us30.svg" class="item__icon">
-          <div class="column">
-            <p class="item__name">US30</p>
-            <p class="item__description">BlackBull Markets &middot; Dow Jones</p>
-          </div>
-        </nav>
+
+      <a href="videos/" id="videos">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Videos
+          </p>
+
+          <div class="selected--2 transition"> </div>
+        </div>
       </a>
-      <a href="../US100">
-        <nav class="select__item us100">
-          <img src="images/us-100.svg" class="item__icon">
-          <div class="column">
-            <p class="item__name">NASDAQ</p>
-            <p class="item__description">Nasdaq Stock Market &middot; NDX</p>
-          </div>
-        </nav>
+
+      <a href="thumbnails/" id="thumbnails">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Thumbnails
+          </p>
+
+          <div class="selected--2 transition"> </div>
+        </div>
       </a>
-      <a href="../EURUSD">
-        <nav class="select__item eurusd">
-          <div class="relative">
-            <img src="images/eur.svg" class="item__icon--2">
-            <img src="images/usd.svg" class="item__icon--3">
-          </div>
-          <div class="column">
-            <p class="item__name">EURUSD</p>
-            <p class="item__description">OANDA &middot; EURO/DÓLAR</p>
-          </div>
-        </nav>
+    </nav>
+
+    <nav class="header__middle-section transition">
+      <a href="#">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Home
+          <div class="selected transition"> </div>
+          </p>
+
+        </div>
       </a>
-      <a href="../USDJPY">
-        <nav class="select__item usdjpy">
-          <div class="relative">
-            <img src="images/usd.svg" class="item__icon--2">
-            <img src="images/jpy.svg" class="item__icon--3">
-          </div>
-          <div class="column">
-            <p class="item__name">USDJPY</p>
-            <p class="item__description">OANDA &middot; LIBRA/DÓLAR</p>
-          </div>
-        </nav>
+    </nav>
+
+    <nav class="header__right-section alignment">
+      <a href="projects/">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Projects
+          </p>
+
+          <div class="selected--2 transition"> </div>
+        </div>
       </a>
-      <a href="../GBPUSD">
-        <nav class="select__item gbpusd">
-          <div class="relative">
-            <img src="images/gbp.svg" class="item__icon--2">
-            <img src="images/usd.svg" class="item__icon--3">
-          </div>
-          <div class="column">
-            <p class="item__name">GBPUSD</p>
-            <p class="item__description">OANDA &middot; DÓLAR/JAPONESE YEN </p>
-          </div>
-        </nav>
+
+      <a href="about/">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            About
+          </p>
+          <div class="selected--2 transition"> </div>
+        </div>
       </a>
-      <p class="watermark">@Jayeen - 2026</p>
-    </main>
-  </body>
+
+      <a href="contact/">
+        <div class="header__button column alignment">
+          <p class="header__text">
+            Contact
+          </p>
+
+          <div class="selected--2 transition"> </div>
+        </div>
+      </a>
+
+      <a class="selected--3 relative center" href="profile/">
+        <img class="profile-picture" src="images/php.webp">
+        <div class="tooltip">
+          Profile
+        </div>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section__1 wrap">
+      <div id="introduction">
+        <h1>
+          Welcome to my website!
+        </h1>
+        <p class="spacing">
+          Hello, I'm Jayden
+          <img class="emoji" src="images/wave2.webp">
+
+          <br>
+
+          What I've <span class="text-decoration">
+            learned</span>
+          so far:
+        <ul class="list">
+          <li class="list__symbol size1">
+            <div class="alignment">
+              <img class="icon" src="images/html-icon.webp">
+              HTML
+            </div>
+          </li>
+
+          <li class="list__symbol size1">
+            <div div class="alignment">
+              <img class="icon" src="images/css-icon.webp">
+              CSS
+            </div>
+          </li>
+        </ul>
+        </p>
+        <p class="learning__text">
+          What I'm currently Learning:
+        </p>
+      </div>
+
+      <nav id="languages">
+        <div class="language alignment ">
+          <a href="https://react.dev/" target="_blank" class="react alignment center column">
+            <img class="language__icon react" src="images/react-glow.webp">
+            <p class="language__text">React</p>
+          </a>
+          <a href="https://www.typescriptlang.org/" target="_blank" class="typescript alignment center column">
+            <img class="language__icon rounded-1" target="_blank" src="images/typescript-glow.webp">
+            <p class="language__text">TypeScript</p>
+          </a>
+        </div>
+
+        <div class="language--2 alignment ">
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="html alignment center column">
+            <img class="language__icon" src="images/HTML-glow.webp">
+            <p class="language__text">HTML</p>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="css alignment center column">
+            <img class="language__icon" src="images/css-glow.webp">
+            <p class="language__text">CSS</p>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="js alignment center column">
+            <img class="language__icon rounded-1" src="images/javascript-glow.webp">
+            <p class="language__text">JavaScript</p>
+          </a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section__2">
+      <div id="progress">
+        <div class="progress__border">
+          <div class="progress__bar html--2">
+          </div>
+          <p class="progress__percentage html--3">
+            70%
+          </p>
+        </div>
+
+        <img class="progress__language" src="images/html-icon.webp">
+        
+        <p class="language__name">
+          HTML
+        </p>
+      </div>
+
+      <div id="progress">
+        <div class="progress__border">
+          <div class="progress__bar css--2">
+          </div>
+          <p class="progress__percentage css--3">
+            50%
+          </p>
+        </div>
+        <img class="progress__language" src="images/css-icon.webp">
+
+        <p class="language__name">
+          CSS
+        </p>
+
+        
+      </div>
+
+      <div id="progress">
+        <div class="progress__border">
+          <div class="progress__bar js--2">
+          </div>
+          <p class="progress__percentage js--3">
+              1%
+          </p>
+        </div>
+        
+        <img class="progress__language" src="images/javascript.webp">
+        <p class="language__name">
+          JavaScript
+        </p>
+      </div>
+
+      <div id="progress">
+        <div class="progress__border">
+          <div class="progress__bar typescript--2">
+          </div>
+          <p class="progress__percentage js--3">
+              1%
+          </p>
+        </div>
+        
+        <img class="progress__language" src="images/typescript.webp">
+        <p class="language__name">
+          TypeScript
+        </p>
+      </div>
+
+      <div id="progress">
+        <div class="progress__border">
+          <div class="progress__bar react--2">
+          </div>
+          <p class="progress__percentage js--3">
+              1%
+          </p>
+        </div>
+        
+        <img class="progress__language" src="images/React.webp">
+        <p class="language__name">
+          React
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer absolute center border-top column alignment">
+    <p class="footer__text">Contact Me</p>
+    <nav class="column--2 wrap">
+      <a href="https://discord.com/users/814246895265906728" target="_blank">
+        <button class="discord__button alignment"><img class="icon--2" src="images/discord.webp"> Discord </button>
+      </a>
+      <a>
+        <button class="whatsapp__button alignment"><img class="icon" src="images/whatsapp.webp"> WhatsApp </button>
+      </a>
+      <a>
+        <button class="youtube__button alignment"><img class="icon" src="images/yt-logo.webp"> YouTube </button>
+      </a>
+    </nav>
+  </footer>
+
+</body>
 
 </html>
-
-
