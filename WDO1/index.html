@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora de stop loss XAUUSD e alvo">
+
+    <title>WDO1! - Calculadora</title>
+    <link rel="icon" href="../favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../favicon.png" type="image/png" media="(prefers-color-scheme: light)">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="https://www.tradingview.com" target="_blank">
+        <img src="../images/tradingview.png" class="tradingview">
+      </a>
+      <h1 class="header__title">WDO1! - MINI DÓLAR</h1>
+
+      <a href="https://www.tradingview.com/chart/?symbol=BMFBOVESPA%3AWDO1%21" target="_blank">
+        <img src="../images/usd.svg" class="header__icon">
+      </a>
+    </header>
+    <main>
+      <p class="title">Calcular Stop Loss</p>
+      <div class="row">
+        <div class="column size1">
+          <p class="description">Contratos</p>
+          <input type="number" id="contratos" oninput="result()" class="input" placeholder="0.00">
+        </div>
+        <div class="column size1">
+          <p class="description">Pontos</p>
+          <input type="number" id="pontos" oninput="result()" class="input" placeholder="000">
+        </div>
+        <p class="igual">=</p>
+        <div class="column size2">
+          <p class="description--2">Stop Loss</p>
+          <p id="result">R$00.00</p>
+        </div>
+      </div>
+      
+      <p class="title">Calcular Contratos</p>
+      <div class="row">
+        <div class="column size1">
+          <p class="description">Pontos</p>
+          <input type="number" id="pontos2" oninput="result2()" class="input" placeholder="000">
+        </div>
+        <div class="column size1">
+          <p class="description">Stop Loss (R$)</p>
+          <input type="number" id="stopLoss" oninput="result2()" class="input" placeholder="$00.00">
+        </div>
+        <p class="igual">=</p>
+        <div class="column size2">
+          <p class="description--2">Contratos</p>
+          <p id="result2">0.00</p>
+        </div>
+      </div>
+
+      <p class="title">Calcular Pontos</p>
+      <div class="row">
+        <div class="column size1">
+          <p class="description">Contratos</p>
+          <input type="number" id="contratos2" oninput="result3()" class="input" placeholder="0.00">
+        </div>
+        <div class="column size1">
+          <p class="description">Stop Loss (R$)</p>
+          <input type="number" id="stopLoss2" oninput="result3()" class="input" placeholder="$00.00">
+        </div>
+        <p class="igual">=</p>
+        <div class="column size2">
+          <p class="description--2">Pontos</p>
+          <p id="result3">000</p>
+        </div>
+      </div>
+    </main>
+    <img src="../images/glow.png" class="bg__glow">
+    <p class="watermark">@Jayeen - 2026</p>
+  </body>
+</html>
