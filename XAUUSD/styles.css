@@ -35,8 +35,6 @@ h1 {
   text-align: center;
 }
 
-
-
 /* =============- T E X T -============= */
 
 .title {
@@ -238,5 +236,6 @@ h1 {
 @font-face {
   font-family: "Apple-system";
   src: url("../fonts/pro/SF-Pro-Text-Regular.otf") format('opentype');
+
 
 }
