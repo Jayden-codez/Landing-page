@@ -37,7 +37,8 @@ h1 {
 
 hr {
   background-color: var(--border);
-  margin: 1em 3em; 
+  color: var(--border);
+  margin: 1em 1em; 
   margin-bottom: 0;
 }
 /* =============- T E X T -============= */
@@ -289,6 +290,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
