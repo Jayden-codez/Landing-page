@@ -10,7 +10,7 @@
 
 /* =============- ROOT STYLES -============= */
 html {
-  font-size: 100%;
+  font-size: 200%;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 3rem;
-  overflow: hidden;
+
 }
 
 a {
@@ -55,7 +55,7 @@ h1 {
   color: var(--text-clr2);
   font-family: "Apple-system";
   font-size: 1rem;
-  margin: 0;
+  
 }
 
 .input {
@@ -75,15 +75,7 @@ h1 {
   outline: none;
   border: solid 2px #2962ff;
 }
-.igual {
-  color: var(--text-clr);
-  font-family: "Apple-system";
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  margin-bottom: 0.3rem;
-  margin-top: 2rem;
-  display: inline-block;
-}
+
 
 #result, #result2, #result3 {
   color: var(--text-clr2);
@@ -92,7 +84,9 @@ h1 {
   margin: 0;
 }
 
-
+.igual {
+  display: none;
+}
 
 /* =============- I M A G E S -============= */
 
@@ -175,9 +169,8 @@ h1 {
 /* =============- flexbox -============= */
 
 .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .column {
@@ -186,7 +179,7 @@ h1 {
 }
 
 .size1 {
-  width: 15rem;
+  width: 10rem;
   margin-left: 1rem;
 }
 
@@ -240,9 +233,36 @@ h1 {
 
 /* ================- MEDIA QUERIES -================= */
 
-@media (max-width: 500px) {
+@media (min-width: 800px) {
   .size1 {
-  width: 7rem;
-  margin-left: 1rem;
+    width: 11rem;
+    margin-left: 1rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .igual {
+    color: var(--text-clr);
+    font-family: "Apple-system";
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  .description--2 {
+    margin: 0;
+  }
+  html {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .size1 {
+    width: 15rem;
+    margin-left: 1rem;
   }
 }
