@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="description" content="Calculadora de stop loss XAUUSD e alvo">
 
-    <title>Calculadora de Stop loss</title>
-    <link rel="icon" href="../favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="../favicon.png" type="image/png" media="(prefers-color-scheme: light)">
+    <title>BTCUSD - Calculadora</title>
+    <link rel="icon" href="../calculadora/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../calculadora/favicon.png" type="image/png" media="(prefers-color-scheme: light)">
     
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
@@ -17,14 +17,55 @@
       <a href="https://www.tradingview.com" target="_blank">
         <img src="../images/tradingview.png" class="tradingview">
       </a>
-      <h1 class="header__title">Stop Loss - BTCUSD</h1>
+      <h1 class="header__title">BTCUSD</h1>
 
-      <a href="https://www.tradingview.com/chart/KoI5x5pb/?symbol=OANDA%3AXAUUSD" target="_blank">
+      <a href="https://www.tradingview.com/chart/?symbol=BINANCE%3ABTCUSDT" target="_blank">
         <img src="../images/Bitcoin.svg" class="header__icon">
       </a>
     </header>
     <main>
-      <h1>TRABALHO EM ANDAMENTO.</h1>
+      <p class="title">Calcular Stop Loss</p>
+      <div class="row">
+        <div class="column size1">
+          <p class="description">Valor do Bitcoin</p>
+          <input type="number" id="valor" oninput="result()" class="input" placeholder="$90103.94">
+        </div>
+        <div class="column size1">
+          <p class="description">Stop - Porcentagem (%)</p>
+          <input type="number" id="porcentagem" oninput="result()" class="input" placeholder="0.1% - 100%">
+        </div>
+        <div class="column size1">
+          <p class="description">Contratos</p>
+          <input type="number" id="contratos" oninput="result()" class="input" placeholder="0.00">
+        </div>
+        <p class="igual">=</p>
+        <div class="column size2">
+          <p class="description--2">Stop Loss</p>
+          <p id="result">$00.00</p>
+        </div>
+      </div>
+
+      <p class="title">Calcular Contratos</p>
+      <div class="row">
+        <div class="column size1">
+          <p class="description">Valor do Bitcoin</p>
+          <input type="number" id="valor2" oninput="result2()" class="input" placeholder="$90103.94">
+        </div>
+        <div class="column size1">
+          <p class="description">Stop - Porcentagem (%)</p>
+          <input type="number" id="porcentagem2" oninput="result2()" class="input" placeholder="0.1% - 100%">
+        </div>
+        <div class="column size1">
+          <p class="description">Stop Loss ($)</p>
+          <input type="number" id="stopLoss" oninput="result2()" class="input" placeholder="0.00">
+        </div>
+        <p class="igual">=</p>
+        <div class="column size2">
+          <p class="description--2">Contratos</p>
+          <p id="result2">$00.00</p>
+        </div>
+      </div>
     </main>
+    <p class="watermark">@Jayeen - 2026</p>
   </body>
 </html>
