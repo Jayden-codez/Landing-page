@@ -18,7 +18,7 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 3rem;
-
+  padding-bottom: 3 rem;
 }
 
 a {
@@ -164,6 +164,7 @@ h1 {
   margin-bottom: 0.1rem;
   opacity: 0;
   animation: fade-in3 1s ease-out 0ms 1 forwards;
+  visibility: hidden;
 }
 
 /* =============- flexbox -============= */
@@ -266,11 +267,14 @@ h1 {
     height: 3rem;
     width: 3rem;
   }
+  .watermark {
+    visibility: visible;
+  }
 }
 
 @media (min-width: 1024px) {
   .size1 {
-    width: 15rem;
+    width: 14rem;
     margin-left: 1rem;
   }
 }
