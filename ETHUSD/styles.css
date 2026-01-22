@@ -142,7 +142,7 @@ h1 {
 }
 .header__icon:hover {
   opacity: 0.95;
-  filter: drop-shadow(0 0 0.5rem rgba(255, 196, 0, 0.5));
+  filter: drop-shadow(0 0 0.5rem rgba(0, 112, 232, 0.5));
 }
 
 .header__title {
@@ -278,5 +278,6 @@ h1 {
     margin-left: 1rem;
   }
 }
+
 
 
