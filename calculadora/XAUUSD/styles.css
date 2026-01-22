@@ -157,4 +157,22 @@ h1 {
   font-family: "Apple-system";
   src: url("../fonts/pro/SF-Pro-Text-Regular.otf") format('opentype');
 
+
+}
+
+/* ================- MEDIA QUERIES -================= */
+
+@media (max-width: 500px) {
+  .size1 {
+  width: 7rem;
+  margin-left: 1rem;
+  
+}
+
+@media (min-width: 1300px) {
+  .size1 {
+  width: 16.5rem;
+  margin-left: 1rem;
+  
+}
 }
