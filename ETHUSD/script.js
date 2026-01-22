@@ -3,7 +3,7 @@
     let valor = '';
 
     if (document.getElementById("valor").value === '') {
-        valor = 90103.94;
+        valor = 3034.42;
     } else {
         valor = document.getElementById("valor").value;
     }
@@ -30,4 +30,5 @@
 
     let resultado = stopLoss / ((valor2 / 100) * porcentagem2) ;
     document.getElementById("result2").textContent = `${Math.round(resultado * 100) / 100}`;
+
 }
