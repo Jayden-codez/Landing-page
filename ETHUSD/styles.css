@@ -48,7 +48,7 @@ h1 {
 .description {
   color: var(--text-clr2);
   font-family: "Apple-system";
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-bottom: 0.2rem;
 }
 .description--2 {
@@ -270,14 +270,18 @@ h1 {
   .watermark {
     visibility: visible;
   }
+  .description {
+
+  font-size: 1rem;
+
+}
 }
 
 @media (min-width: 1024px) {
   .size1 {
-    width: 13.5rem;
+    width: 14rem;
     margin-left: 1rem;
   }
 }
-
 
 
