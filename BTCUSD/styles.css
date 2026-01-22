@@ -35,6 +35,11 @@ h1 {
   text-align: center;
 }
 
+hr {
+  background-color: var(--border);
+  margin: 1em 3em; 
+  margin-bottom: 0;
+}
 /* =============- T E X T -============= */
 
 .title {
@@ -284,6 +289,7 @@ h1 {
     margin-left: 1rem;
   }
 }
+
 
 
 
