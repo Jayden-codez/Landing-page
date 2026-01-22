@@ -17,4 +17,5 @@ function result3() {
     let stopLoss = document.getElementById("stopLoss2").value;
     let resultado3 = stopLoss / contratos;
     document.getElementById("result3").textContent = resultado3;
+
 }
