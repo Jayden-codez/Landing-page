@@ -274,8 +274,9 @@ h1 {
 
 @media (min-width: 1024px) {
   .size1 {
-    width: 14rem;
+    width: 12.5rem;
     margin-left: 1rem;
   }
 }
+
 
