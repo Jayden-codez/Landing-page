@@ -282,6 +282,9 @@ hr {
   .title {
     font-size: 1.5rem;
   }
+  hr {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -290,6 +293,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
