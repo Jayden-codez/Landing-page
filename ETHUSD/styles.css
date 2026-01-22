@@ -10,7 +10,7 @@
 
 /* =============- ROOT STYLES -============= */
 html {
-  font-size: 100%;
+  font-size: 200%;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 3rem;
-  overflow: hidden;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -34,8 +34,6 @@ h1 {
   font-size: 3rem;
   text-align: center;
 }
-
-
 
 /* =============- T E X T -============= */
 
@@ -57,7 +55,7 @@ h1 {
   color: var(--text-clr2);
   font-family: "Apple-system";
   font-size: 1rem;
-  margin: 0;
+  
 }
 
 .input {
@@ -77,15 +75,7 @@ h1 {
   outline: none;
   border: solid 2px #2962ff;
 }
-.igual {
-  color: var(--text-clr);
-  font-family: "Apple-system";
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  margin-bottom: 0.3rem;
-  margin-top: 2rem;
-  display: inline-block;
-}
+
 
 #result, #result2, #result3 {
   color: var(--text-clr2);
@@ -94,7 +84,9 @@ h1 {
   margin: 0;
 }
 
-
+.igual {
+  display: none;
+}
 
 /* =============- I M A G E S -============= */
 
@@ -127,8 +119,8 @@ h1 {
 }
 
 .tradingview {
-  height: 3rem;
-  width: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
@@ -140,8 +132,8 @@ h1 {
 }
 
 .header__icon {
-  height: 3rem;
-  width: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
@@ -150,7 +142,7 @@ h1 {
 }
 .header__icon:hover {
   opacity: 0.95;
-  filter: drop-shadow(0 0 0.5rem rgba(0, 183, 255, 0.5));
+  filter: drop-shadow(0 0 0.5rem rgba(255, 196, 0, 0.5));
 }
 
 .header__title {
@@ -172,14 +164,14 @@ h1 {
   margin-bottom: 0.1rem;
   opacity: 0;
   animation: fade-in3 1s ease-out 0ms 1 forwards;
+  visibility: hidden;
 }
 
 /* =============- flexbox -============= */
 
 .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .column {
@@ -188,7 +180,7 @@ h1 {
 }
 
 .size1 {
-  width: 15rem;
+  width: 10rem;
   margin-left: 1rem;
 }
 
@@ -238,5 +230,53 @@ h1 {
 @font-face {
   font-family: "Apple-system";
   src: url("../fonts/pro/SF-Pro-Text-Regular.otf") format('opentype');
-
 }
+
+/* ================- MEDIA QUERIES -================= */
+
+@media (min-width: 800px) {
+  .size1 {
+    width: 11rem;
+    margin-left: 1rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .igual {
+    color: var(--text-clr);
+    font-family: "Apple-system";
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  .description--2 {
+    margin: 0;
+  }
+  html {
+    font-size: 120%;
+  }
+  .tradingview {
+    height: 3rem;
+    width: 3rem;
+  }
+  .header__icon {
+    height: 3rem;
+    width: 3rem;
+  }
+  .watermark {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .size1 {
+    width: 13.5rem;
+    margin-left: 1rem;
+  }
+}
+
+
