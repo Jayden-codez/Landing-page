@@ -119,8 +119,8 @@ h1 {
 }
 
 .tradingview {
-  height: 3rem;
-  width: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
@@ -132,8 +132,8 @@ h1 {
 }
 
 .header__icon {
-  height: 3rem;
-  width: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
@@ -257,6 +257,14 @@ h1 {
   }
   html {
     font-size: 120%;
+  }
+  .tradingview {
+    height: 3rem;
+    width: 3rem;
+  }
+  .header__icon {
+    height: 3rem;
+    width: 3rem;
   }
 }
 
