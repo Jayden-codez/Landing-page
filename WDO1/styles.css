@@ -17,7 +17,7 @@ body {
   background-color: var(--bg-color);
   padding: 0;
   margin: 0;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 
@@ -291,6 +291,9 @@ hr {
   .title {
     margin-top: 2rem;
   }
+  body {
+    padding-top: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -299,6 +302,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
