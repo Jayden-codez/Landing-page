@@ -156,7 +156,7 @@ hr {
 .header__title {
   color: var(--text-clr);
   font-family: "Euclid-semibold";
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0.3rem 0;
 }
 
@@ -242,6 +242,12 @@ hr {
 
 /* ================- MEDIA QUERIES -================= */
 
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 800px) {
   .size1 {
     width: 11rem;
@@ -281,6 +287,9 @@ hr {
   .title {
     font-size: 1.5rem;
   }
+  .header__title {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -289,6 +298,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
