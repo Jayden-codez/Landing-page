@@ -188,7 +188,6 @@ hr {
 
 .size1 {
   width: 10rem;
-  margin-left: 1rem;
 }
 
 .size2 {
@@ -286,6 +285,9 @@ hr {
   .hr {
     display: none;  
   }
+  .size1 {
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -294,6 +296,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
