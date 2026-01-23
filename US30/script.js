@@ -21,7 +21,7 @@ function result3() {
 
 
 const title = document.querySelector(".header__title");
-const mediaQuery = window.matchMedia("(max-width: 361px)");
+const mediaQuery = window.matchMedia("(max-width: 420px)");
 
 function updateTitle(e) {
   title.textContent = e.matches
@@ -31,6 +31,7 @@ function updateTitle(e) {
 
 updateTitle(mediaQuery);
 mediaQuery.addEventListener("change", updateTitle);
+
 
 
 
