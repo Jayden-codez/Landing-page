@@ -51,7 +51,7 @@ hr {
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-bottom: 0.3rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .description {
   color: var(--text-clr2);
@@ -341,11 +341,11 @@ hr {
     display: none;
   }
   .header__title {
-  color: var(--text-clr);
-  font-family: "Euclid-semibold";
-  font-size: 1.5rem;
-  margin: 2rem 0;
-}
+    margin: 2rem 0;
+  }
+  .title {
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -354,5 +354,6 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
