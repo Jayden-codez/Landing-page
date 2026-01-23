@@ -51,7 +51,7 @@ hr {
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-bottom: 0.3rem;
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
 }
 .description {
   color: var(--text-clr2);
@@ -299,6 +299,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
