@@ -148,7 +148,8 @@ h1 {
 .header__title {
   color: var(--text-clr);
   font-family: "Euclid-semibold";
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0.2rem 0;
 
 }
 
@@ -270,6 +271,12 @@ h1 {
   .watermark {
     visibility: visible;
   }
+  .header__title {
+    color: var(--text-clr);
+    font-family: "Euclid-semibold";
+    font-size: 1.5rem;
+    margin: 0.7rem 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -278,6 +285,7 @@ h1 {
     margin-left: 1rem;
   }
 }
+
 
 
 
