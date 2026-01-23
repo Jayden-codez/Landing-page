@@ -19,3 +19,18 @@ function result3() {
     document.getElementById("result3").textContent = Math.round(resultado3 * 100) / 100;
 
 }
+
+const title = document.querySelector(".header__title");
+
+const mediaQuery = window.matchMedia("(max-width: 360px)");
+
+function updateTitle(e) {
+  if (e.matches) {
+    title.textContent = "US100";
+  } else {
+    title.textContent = "US100 - NASDAQ";
+  }
+}
+
+// Run on load
+updateTitle(mediaQuery);
