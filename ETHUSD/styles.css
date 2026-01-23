@@ -271,8 +271,8 @@ hr {
     width: 3rem;
   }
   .header__icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
   .watermark {
     visibility: visible;
@@ -297,6 +297,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
