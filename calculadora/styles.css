@@ -200,7 +200,7 @@ main {
   font-size: 1rem;
   margin-bottom: 0.1rem;
   opacity: 0;
-  animation: fade-in3 1s ease-out 0ms 1 forwards;
+  display: none;
 }
 /* =============- flexbox -============= */
 
@@ -251,18 +251,13 @@ main {
     opacity: 0.5;
   }
 }
-/* =============- Media Queries -============= 
+/* =============- Media Queries -============= */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: white;
-    --text-clr: black;
-  }
-  .tradingview {
-    filter: brightness(0%);
-  }
+@media (min-width: 800px) {
+  display: inline-block;
+  animation: fade-in3 1s ease-out 0ms 1 forwards;
 
-} */
+} 
 
 /* ================- F O N T S -================= */
 @font-face {
@@ -277,3 +272,4 @@ main {
 
 
 }
+
