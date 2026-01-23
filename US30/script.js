@@ -17,5 +17,21 @@ function result3() {
     let stopLoss = document.getElementById("stopLoss2").value;
     let resultado3 = stopLoss / contratos;
     document.getElementById("result3").textContent = Math.round(resultado3 * 100) / 100;
-
 }
+
+
+const title = document.querySelector(".header__title");
+
+const mediaQuery = window.matchMedia("(max-width: 361px)");
+
+function updateTitle(e) {
+  if (e.matches) {
+    title.textContent = "US30";
+  } else {
+    title.textContent = "US30 - DOW JONES";
+  }
+}
+
+// Run on load
+updateTitle(mediaQuery);
+
