@@ -100,6 +100,7 @@ main {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
+  margin-top: 1.3rem;
   animation: fade-in 600ms ease-out 0ms 1;
 }
 
@@ -266,6 +267,9 @@ main {
   .header__title {
     font-size: 1.5rem;
   }
+  .select {
+    margin-top: 2rem;
+  }
 
 } 
 
@@ -282,6 +286,7 @@ main {
 
 
 }
+
 
 
 
