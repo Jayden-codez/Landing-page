@@ -20,9 +20,9 @@ function result3() {
 
 }
 
-const title = document.querySelector(".header__title");
+const title = document.getElementsByClassName("header__title");
 
-const mediaQuery = window.matchMedia("(max-width: 360px)");
+const mediaQuery = window.matchMedia("(max-width: 361px)");
 
 function updateTitle(e) {
   if (e.matches) {
@@ -34,3 +34,4 @@ function updateTitle(e) {
 
 // Run on load
 updateTitle(mediaQuery);
+
