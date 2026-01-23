@@ -84,7 +84,7 @@ a:visited {
 .header__title {
   color: var(--text-clr);
   font-family: "Euclid-semibold";
-  font-size: 1.5rem;
+  font-size: 1rem;
 
 }
 
@@ -254,8 +254,9 @@ main {
 /* =============- Media Queries -============= */
 
 @media (min-width: 800px) {
-  display: inline-block;
-  animation: fade-in3 1s ease-out 0ms 1 forwards;
+  .header__title {
+    font-size: 1.5rem;
+  }
 
 } 
 
@@ -272,4 +273,5 @@ main {
 
 
 }
+
 
