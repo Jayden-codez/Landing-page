@@ -21,19 +21,18 @@ function result3() {
 
 
 const title = document.querySelector(".header__title");
-
 const mediaQuery = window.matchMedia("(max-width: 361px)");
 
 function updateTitle(e) {
-  if (e.matches) {
-    title.textContent = "US30";
-  } else {
-    title.textContent = "US30 - DOW JONES";
-  }
+  title.textContent = e.matches
+    ? "US30"
+    : "US30 - DOW JONES";
 }
 
-// Run on load
 updateTitle(mediaQuery);
+mediaQuery.addEventListener("change", updateTitle);
+
+
 
 
 
