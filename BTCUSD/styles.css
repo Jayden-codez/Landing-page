@@ -155,7 +155,7 @@ hr {
 .header__title {
   color: var(--text-clr);
   font-family: "Euclid-semibold";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0.3rem 0;
 }
 
@@ -286,6 +286,9 @@ hr {
   hr {
     display: none;
   }
+  .header__title {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -294,6 +297,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
