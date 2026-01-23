@@ -25,12 +25,13 @@ const mediaQuery = window.matchMedia("(max-width: 420px)");
 
 function updateTitle(e) {
   title.textContent = e.matches
-    ? "US30"
+    ? "DOW JONES"
     : "US30 - DOW JONES";
 }
 
 updateTitle(mediaQuery);
 mediaQuery.addEventListener("change", updateTitle);
+
 
 
 
