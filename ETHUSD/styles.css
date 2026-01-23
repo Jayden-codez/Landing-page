@@ -39,7 +39,8 @@ hr {
   background-color: var(--border);
   color: var(--border);
   margin: 1em 0.7em; 
-  margin-bottom: 0;
+  border: none;
+  border-top: 1px solid var(--border);
 }
 
 /* =============- T E X T -============= */
@@ -293,6 +294,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
