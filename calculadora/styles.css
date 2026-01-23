@@ -75,7 +75,7 @@ a:visited {
   object-position: center;
   cursor: pointer;
   transition: ease 300ms;
-  margin-right: 0.15rem;
+  margin-right: 1rem;
 }
 .candles:hover {
   opacity: 0.95;
@@ -282,6 +282,7 @@ main {
 
 
 }
+
 
 
 
