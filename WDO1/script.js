@@ -19,3 +19,15 @@ function result3() {
     document.getElementById("result3").textContent = Math.round(resultado3 * 100) / 100;
 
 }
+
+const title = document.querySelector(".header__title");
+const mediaQuery = window.matchMedia("(max-width: 420px)");
+
+function updateTitle(e) {
+  title.textContent = e.matches
+    ? "MINI DÓLAR"
+    : "WDO1! - MINI DÓLAR";
+}
+
+updateTitle(mediaQuery);
+mediaQuery.addEventListener("change", updateTitle);
