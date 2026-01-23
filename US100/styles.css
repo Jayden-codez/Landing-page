@@ -35,6 +35,14 @@ h1 {
   text-align: center;
 }
 
+hr {
+  background-color: var(--border);
+  color: var(--border);
+  margin: 1em 0.7em; 
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
 /* =============- T E X T -============= */
 
 .title {
@@ -275,6 +283,9 @@ h1 {
     font-size: 1.5rem;
     margin: 0.7rem 0;
   }
+  hr {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -283,6 +294,7 @@ h1 {
     margin-left: 1rem;
   }
 }
+
 
 
 
