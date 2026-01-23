@@ -40,7 +40,6 @@ hr {
   color: var(--border);
   margin: 1em 0.7em; 
   margin-bottom: 0;
-  height: 1px;
 }
 
 /* =============- T E X T -============= */
@@ -294,6 +293,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
