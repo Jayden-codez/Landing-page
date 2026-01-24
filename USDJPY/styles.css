@@ -151,8 +151,8 @@ hr {
 
 .forex__icons {
   position: relative;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 4rem;
+  height: 3.2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -201,6 +201,7 @@ hr {
   margin-bottom: 0.1rem;
   opacity: 0;
   animation: fade-in3 1s ease-out 0ms 1 forwards;
+  display: none;
 }
 
 /* =============- flexbox -============= */
@@ -334,7 +335,7 @@ hr {
     transition: ease 300ms;
   }
   .watermark {
-    visibility: visible;
+    display: inline-block;
   }
   hr {
     display: none;
@@ -356,6 +357,9 @@ hr {
     margin-left: 1rem;
   }
 }
+
+
+
 
 
 
