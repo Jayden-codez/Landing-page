@@ -347,7 +347,7 @@ hr {
     margin-top: 2rem;
   }
   .watermark {
-    display: inline-block;
+    display: none;
   }
 }
 
@@ -357,8 +357,6 @@ hr {
     margin-left: 1rem;
   }
 }
-
-
 
 
 
