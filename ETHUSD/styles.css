@@ -289,6 +289,9 @@ hr {
   body {
     padding-top: 3rem;
   }
+  hr {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -297,6 +300,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
