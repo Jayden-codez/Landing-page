@@ -201,6 +201,7 @@ hr {
   margin-bottom: 0.1rem;
   opacity: 0;
   animation: fade-in3 1s ease-out 0ms 1 forwards;
+  visibility: hidden;
 }
 
 /* =============- flexbox -============= */
@@ -356,6 +357,7 @@ hr {
     margin-left: 1rem;
   }
 }
+
 
 
 
