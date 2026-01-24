@@ -25,11 +25,12 @@ const mediaQuery = window.matchMedia("(max-width: 420px)");
 
 function updateTitle(e) {
   title.textContent = e.matches
-    ? "DOW JONES"
-    : "US30 - DOW JONES";
+    ? "MINI DÓLARE"
+    : "WDO1! - MINI DÓLARE";
 }
 
 updateTitle(mediaQuery);
 mediaQuery.addEventListener("change", updateTitle);
+
 
 
